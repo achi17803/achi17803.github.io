@@ -108,6 +108,11 @@ nav a:hover {
     color: #666;
     margin: 0;
 }
+.work-description {
+    color: #333;
+    margin-top: 8px !important;
+    max-width: 650px;
+}
 
 /* Mobile layout */
 
