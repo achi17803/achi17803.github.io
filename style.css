@@ -56,11 +56,11 @@ main {
 }
 
 main > p {
+    font-family: Georgia, serif;
     font-size: 19px;
     line-height: 1.7;
     margin: 0 0 35px 0;
 }
-
 
 /* Navigation */
 
