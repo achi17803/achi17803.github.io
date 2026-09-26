@@ -66,19 +66,21 @@ main > p {
 
 nav {
     display: flex;
+    justify-content: flex-end;
     gap: 28px;
+    margin-bottom: 45px;
 }
 
 nav a {
     color: #222;
     text-decoration: none;
-    font-size: 16px;
-    border-bottom: 1px solid #bbb;
-    padding-bottom: 2px;
+    font-size: 15px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
 }
 
 nav a:hover {
-    border-bottom-color: #222;
+    border-bottom-color: #999;
 }
 /* Selected work */
 
