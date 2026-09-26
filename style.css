@@ -13,7 +13,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr 180px;
-    gap: 60px;
+    gap: 45px;
     align-items: start;
     margin-bottom: 60px;
 }
