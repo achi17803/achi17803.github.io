@@ -80,7 +80,34 @@ nav a {
 nav a:hover {
     border-bottom-color: #222;
 }
+/* Selected work */
 
+.selected-work {
+    margin-top: 65px;
+}
+
+.selected-work h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    letter-spacing: -0.5px;
+}
+
+.work-item {
+    margin-bottom: 30px;
+}
+
+.work-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+}
+
+.work-item p {
+    font-size: 15px;
+    color: #666;
+    margin: 0;
+}
 
 /* Mobile layout */
 
