@@ -8,14 +8,32 @@ body {
 }
 
 
-/* Introduction */
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    margin-bottom: 35px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+}
+
+nav a:hover {
+    border-bottom-color: #999;
+}
+
+
+/* Header */
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 220px;
-    gap: 45px;
-    align-items: start;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 header h1 {
@@ -32,62 +50,41 @@ header p {
 }
 
 
-/* Photo placeholder */
+/* Introduction */
 
-header > div:last-child {
+main {
+    max-width: 760px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 35px;
+}
+
+.intro-photo {
     width: 220px;
     height: 270px;
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-header img {
+
+.intro-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-header > div:last-child p {
-    font-size: 14px;
-    color: #999;
-}
-
-
-/* Research statement */
-
-main {
-    max-width: 760px;
-}
-
-main > p {
+main > p,
+.intro-text p {
     font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.7;
     margin: 0 0 35px 0;
 }
 
-/* Navigation */
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 28px;
-    margin-bottom: 18px;
-}
-
-nav a {
-    color: #222;
-    text-decoration: none;
-    font-size: 15px;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 3px;
-}
-
-nav a:hover {
-    border-bottom-color: #999;
-}
 /* Selected work */
 
 .selected-work {
@@ -116,11 +113,13 @@ nav a:hover {
     color: #666;
     margin: 0;
 }
+
 .work-description {
     color: #333;
     margin-top: 8px !important;
     max-width: 650px;
 }
+
 
 /* Mobile layout */
 
@@ -130,27 +129,34 @@ nav a:hover {
         padding: 45px 24px;
     }
 
-    header {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    nav {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 30px;
     }
 
-    header > div:last-child {
-        width: 140px;
-        height: 175px;
+    header {
+        margin-bottom: 30px;
     }
 
     header h1 {
         font-size: 40px;
     }
 
-    main > p {
-        font-size: 17px;
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 
-    nav {
-        flex-wrap: wrap;
-        gap: 20px;
+    .intro-photo {
+        width: 140px;
+        height: 175px;
+    }
+
+    main > p,
+    .intro-text p {
+        font-size: 17px;
     }
 
 }
